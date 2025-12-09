@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c6a6cd9e20d4961a3fc5a8f1ac627d, type: 3}
+  m_Name: UnitsScriptableObject
+  m_EditorClassIdentifier: 
+  OneCosts:
+  - Cost: 1
+    Name: Captain Carreon
+    Origin: 3
+    Class: 4
+    AttackDamage1Star: 30
+    AttackDamage2Star: 40
+    AttackDamage3Star: 60
+    MaxHealth1Star: 450
+    MaxHealth2Star: 600
+    MaxHealth3Star: 1200
+    AttackSpeed: 0.7
+    UnitPrefab: {fileID: 1280957083022266073, guid: 31c2b1688f7994c7194531c0cea0fab7, type: 3}
+  TwoCosts:
+  - Cost: 2
+    Name: Sion
+    Origin: 6
+    Class: 3
+    AttackDamage1Star: 50
+    AttackDamage2Star: 55
+    AttackDamage3Star: 65
+    MaxHealth1Star: 850
+    MaxHealth2Star: 1350
+    MaxHealth3Star: 2000
+    AttackSpeed: 0.55
+    UnitPrefab: {fileID: 0}
+  ThreeCosts: []
+  FourCosts: []
+  FiveCosts:
+  - Cost: 5
+    Name: Guntyx
+    Origin: 5
+    Class: 1
+    AttackDamage1Star: 95
+    AttackDamage2Star: 115
+    AttackDamage3Star: 1111
+    MaxHealth1Star: 1350
+    MaxHealth2Star: 1900
+    MaxHealth3Star: 5000
+    AttackSpeed: 0.9
+    UnitPrefab: {fileID: 0}
