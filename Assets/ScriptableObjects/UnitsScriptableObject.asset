@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OneCosts:
   - Cost: 1
-    Name: Captain Carreon
-    Origin: 3
+    Name: Captain Matthew
+    Origin: 4
     Class: 4
     AttackDamage1Star: 30
     AttackDamage2Star: 40
@@ -24,7 +24,7 @@ MonoBehaviour:
     MaxHealth2Star: 600
     MaxHealth3Star: 1200
     AttackSpeed: 0.7
-    UnitPrefab: {fileID: 1280957083022266073, guid: 31c2b1688f7994c7194531c0cea0fab7, type: 3}
+    UnitPrefab: {fileID: 7585947228353557825, guid: 582e05116f3f20d4ca6e99a3242812c2, type: 3}
   TwoCosts:
   - Cost: 2
     Name: Sion
@@ -52,4 +52,4 @@ MonoBehaviour:
     MaxHealth2Star: 1900
     MaxHealth3Star: 5000
     AttackSpeed: 0.9
-    UnitPrefab: {fileID: 0}
+    UnitPrefab: {fileID: 4719333950626327080, guid: 17cf31d2047e9454ebc22e4c32a675b3, type: 3}

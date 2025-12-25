@@ -17,7 +17,6 @@ public class Trait
         Gunslinger,
         Blademaster,
         Bruiser,
-        Pilot,
-        
+        Demolitionist,
     }
 }

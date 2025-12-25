@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c345ce6aff801e4ba952222ea2133bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PurchaseButton: {fileID: 0}
+  PurchaseButton: {fileID: 479426183}
   CurrentUnit: {fileID: 0}
 --- !u!1 &48417410
 GameObject:
@@ -581,13 +581,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShopSlots:
-  - {fileID: 23007230}
-  - {fileID: 1676880116}
-  - {fileID: 1762583194}
-  - {fileID: 331406494}
+  - {fileID: 1676880118}
+  - {fileID: 23007232}
+  - {fileID: 1762583196}
+  - {fileID: 331406496}
   - {fileID: 1939613549}
   RerollButton: {fileID: 1162172741}
   BuyXPButton: {fileID: 1978342870}
+  UnitsPool: {fileID: 11400000, guid: 02922f4065597425e9b325bfa29aed83, type: 2}
 --- !u!1 &409834151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,7 +1717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c345ce6aff801e4ba952222ea2133bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PurchaseButton: {fileID: 0}
+  PurchaseButton: {fileID: 119040914}
   CurrentUnit: {fileID: 0}
 --- !u!1 &1762583194
 GameObject:
