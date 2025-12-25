@@ -90,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4811978973125187525, guid: 31c2b1688f7994c7194531c0cea0fab7, type: 3}
       propertyPath: m_text
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6946695273029606227, guid: 31c2b1688f7994c7194531c0cea0fab7, type: 3}
       propertyPath: m_Color.b
@@ -106,12 +106,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7645722983794146937, guid: 31c2b1688f7994c7194531c0cea0fab7, type: 3}
       propertyPath: m_Name
-      value: 05 - Default Five Cost
+      value: 02 - Default Two Cost
       objectReference: {fileID: 0}
     - target: {fileID: 8874827855397503612, guid: 31c2b1688f7994c7194531c0cea0fab7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 823e88cb90a0b1446919053bb0b48156, type: 3}
+      objectReference: {fileID: 21300000, guid: 9e9c0da2c8a597e4ea06a56ef86264fb, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

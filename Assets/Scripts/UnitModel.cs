@@ -8,6 +8,7 @@ public class UnitModel
     public string Name;
     public Trait.Origin Origin;
     public Trait.Class Class;
+    /*
     public int AttackDamage1Star;
     public int AttackDamage2Star;
     public int AttackDamage3Star;
@@ -16,6 +17,6 @@ public class UnitModel
 
     public int MaxHealth3Star;
     public double AttackSpeed;
-
+    */
     public Unit UnitPrefab;
 }

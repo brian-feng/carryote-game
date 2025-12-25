@@ -17,6 +17,8 @@ public class Trait
         Gunslinger,
         Blademaster,
         Bruiser,
+        Defender,
         Demolitionist,
+        Drunk
     }
 }
