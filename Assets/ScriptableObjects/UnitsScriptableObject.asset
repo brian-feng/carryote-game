@@ -18,6 +18,11 @@ MonoBehaviour:
     Origin: 4
     Class: 4
     UnitPrefab: {fileID: 1206015929760870538, guid: 16decd4f4b10b454a8765f74352f68e4, type: 3}
+  - Cost: 1
+    Name: Misogynyx
+    Origin: 5
+    Class: 8
+    UnitPrefab: {fileID: 1206015929760870538, guid: 16decd4f4b10b454a8765f74352f68e4, type: 3}
   TwoCosts:
   - Cost: 2
     Name: Sion
@@ -29,8 +34,38 @@ MonoBehaviour:
     Origin: 3
     Class: 6
     UnitPrefab: {fileID: 7041360521293082496, guid: 29caace30991ea949a156235c08f6f3e, type: 3}
-  ThreeCosts: []
-  FourCosts: []
+  - Cost: 2
+    Name: Frog Rider
+    Origin: 3
+    Class: 7
+    UnitPrefab: {fileID: 7041360521293082496, guid: c6668fff25959324c880a8ee5e0de60a, type: 3}
+  ThreeCosts:
+  - Cost: 3
+    Name: Darius
+    Origin: 6
+    Class: 4
+    UnitPrefab: {fileID: 3383180225327146646, guid: 23785bfe2642b8746a7c21087fb12a3f, type: 3}
+  - Cost: 3
+    Name: Carreon 22nd
+    Origin: 3
+    Class: 6
+    UnitPrefab: {fileID: 3383180225327146646, guid: 00877546d6a18a44e8d6e08882e5a6b7, type: 3}
+  FourCosts:
+  - Cost: 4
+    Name: Andy Rider
+    Origin: 2
+    Class: 7
+    UnitPrefab: {fileID: 8131421168558628095, guid: 916055f6fc110854288364aa500248bd, type: 3}
+  - Cost: 4
+    Name: Promatthew
+    Origin: 4
+    Class: 4
+    UnitPrefab: {fileID: 8131421168558628095, guid: 409a9490b7052414eb9dcb912125abbd, type: 3}
+  - Cost: 4
+    Name: Ambessa
+    Origin: 6
+    Class: 8
+    UnitPrefab: {fileID: 8131421168558628095, guid: cfd895a865013cf4f976a70b33147f98, type: 3}
   FiveCosts:
   - Cost: 5
     Name: Guntyx

@@ -13,19 +13,26 @@ public class Shop : MonoBehaviour
 
     void Start()
     {
-        Reroll();
+        InitializeShop();
         RerollButton.onClick.AddListener(Reroll);
     }
-    
+
+    private void InitializeShop()
+    {
+        RefreshShop();
+    }
+
     private void Reroll()
+    {
+        RefreshShop();
+        AudioManager.Instance.PlayRollSoundEffect();
+    }
+    private void RefreshShop()
     {
         foreach (ShopSlot slot in ShopSlots)
         {
-            if (slot.HasUnit() == false)
-            {
-                UnitModel newUnit = GenerateUnit();
-                slot.SetUnit(newUnit);
-            }
+            UnitModel newUnit = GenerateUnit();
+            slot.SetUnit(newUnit);
         }
     }
 
@@ -33,7 +40,7 @@ public class Shop : MonoBehaviour
     {
         // Decide what cost of unit to generate
         List<float> odds = GameLogicManager.Instance.LevelOddsDictionary[GameLogicManager.Instance.PlayerLevel];
-        float roll = Random.Range(0f, 5f); 
+        float roll = Random.Range(0f, 1f); 
         float cumulative = 0f;
         float cost = 1;
         for (int i = 0; i < odds.Count; i++)

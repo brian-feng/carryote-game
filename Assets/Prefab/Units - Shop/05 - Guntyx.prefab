@@ -228,6 +228,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: 05 - Guntyx
       objectReference: {fileID: 0}
+    - target: {fileID: 322155405116854483, guid: bb51a45c53239944b969413f6e7bd2c2, type: 3}
+      propertyPath: m_text
+      value: Gunslinger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904617533312666081, guid: bb51a45c53239944b969413f6e7bd2c2, type: 3}
+      propertyPath: m_text
+      value: Guntyx
+      objectReference: {fileID: 0}
+    - target: {fileID: 8290652759539964487, guid: bb51a45c53239944b969413f6e7bd2c2, type: 3}
+      propertyPath: m_text
+      value: Ventyx
+      objectReference: {fileID: 0}
     - target: {fileID: 8716620814279741752, guid: bb51a45c53239944b969413f6e7bd2c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

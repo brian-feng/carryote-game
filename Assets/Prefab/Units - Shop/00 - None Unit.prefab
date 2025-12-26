@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2748238352233917917}
   - component: {fileID: 1990753650812471167}
   m_Layer: 5
-  m_Name: Class
+  m_Name: Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -276,7 +276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 141, y: -119.99985}
+  m_AnchoredPosition: {x: 134, y: -116.999886}
   m_SizeDelta: {x: 18, y: 17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3819822271497182451
@@ -348,7 +348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 192.00002, y: -116.99991}
+  m_AnchoredPosition: {x: 185.00009, y: -114}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5911822710095853990
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 8598475806461028730}
   - component: {fileID: 7842532242335649259}
   m_Layer: 5
-  m_Name: Origin
+  m_Name: Class
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -711,8 +711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Root: {fileID: 8775486033307947576}
-  ClassText: {fileID: 1990753650812471167}
-  OriginText: {fileID: 7842532242335649259}
+  ClassText: {fileID: 7842532242335649259}
+  OriginText: {fileID: 1990753650812471167}
   NameText: {fileID: 368192237175936217}
   CostText: {fileID: 4811978973125187525}
 --- !u!1 &8640910756913243333
@@ -749,7 +749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: -117}
+  m_AnchoredPosition: {x: 19, y: -114.00004}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5076192015858043385

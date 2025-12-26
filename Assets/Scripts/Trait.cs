@@ -3,22 +3,25 @@ public class Trait
     public enum Origin
     {
         None,
-        Friend,
-        Yote,
         Carreon,
         Matthew,
         Ventyx,
-        Noxus
+        Yote,
+        Friend,
+        Noxus,
+        Allfather
     }
-
     public enum Class
     {
         None,
-        Gunslinger,
         Blademaster,
         Bruiser,
+        Cavalier,
         Defender,
         Demolitionist,
-        Drunk
+        Drunk,
+        Gunslinger,
+        Scholar,
+        Vanquisher
     }
 }

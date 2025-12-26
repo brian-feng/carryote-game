@@ -15,10 +15,11 @@ public class ShopSlot : MonoBehaviour
 
     public void SetUnit(UnitModel unit)
     {
-        if (CurrentUnit == null)
+        if (CurrentUnit != null)
         {
-            CurrentUnit = Instantiate(unit.UnitPrefab, transform, false);
-            CurrentUnit.Initialize(unit.Class.ToString(), unit.Origin.ToString(), unit.Name, unit.Cost.ToString());
+            Destroy(CurrentUnit.gameObject);
         }
+        CurrentUnit = Instantiate(unit.UnitPrefab, transform, false);
+        CurrentUnit.Initialize(unit.Class.ToString(), unit.Origin.ToString(), unit.Name, unit.Cost.ToString());
     }
 }

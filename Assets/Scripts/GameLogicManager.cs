@@ -30,7 +30,7 @@ public class GameLogicManager : MonoBehaviour
         { 8, 68 },
         { 9, 68 }
     };
-    public int PlayerLevel { get; private set; } = 1;
+    public int PlayerLevel { get; private set; } = 8;
     public int Difficulty { get; private set; } = 0;
 
     void Awake()
