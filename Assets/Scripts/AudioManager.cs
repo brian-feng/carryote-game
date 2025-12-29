@@ -6,6 +6,8 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance { get; private set; }
 
     [SerializeField] private AudioClip RollSoundEffect;
+    [SerializeField] private AudioClip BuyXPSoundEffect; 
+    [SerializeField] private AudioClip BuyUnitSoundEffect;
     [SerializeField] private AudioSource Source;
     
     void Awake()
@@ -24,5 +26,15 @@ public class AudioManager : MonoBehaviour
     public void PlayRollSoundEffect()
     {
         Source.PlayOneShot(RollSoundEffect);
+    }
+
+    public void PlayBuyXPSoundEffect()
+    {
+        Source.PlayOneShot(BuyXPSoundEffect);
+    }
+
+    public void PlayBuyUnitSoundEffect()
+    {
+        Source.PlayOneShot(BuyUnitSoundEffect);
     }
 }

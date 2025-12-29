@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -85,7 +85,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 195294894742725441, guid: 0ffd03019672c0044970d8680edcf0a0, type: 3}
       propertyPath: m_Name
-      value: 04 - Promatthew 1
+      value: 04 - Ambessa
       objectReference: {fileID: 0}
     - target: {fileID: 322155405116854483, guid: 0ffd03019672c0044970d8680edcf0a0, type: 3}
       propertyPath: m_text

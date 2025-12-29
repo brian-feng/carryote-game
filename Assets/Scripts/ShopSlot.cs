@@ -6,20 +6,38 @@ using UnityEngine.UI;
 public class ShopSlot : MonoBehaviour
 {
     [SerializeField] private Button PurchaseButton;
-    [SerializeField] private Unit CurrentUnit;
+    [SerializeField] private ShopUnit CurrentUnit;
+    [SerializeField] private UnitModel CurrentUnitModel;
 
-    public bool HasUnit()
+    void Start()
     {
-        return  CurrentUnit != null;
+        PurchaseButton.onClick.AddListener(AttemptToBuyUnit);
     }
 
-    public void SetUnit(UnitModel unit)
+    private void AttemptToBuyUnit()
     {
-        if (CurrentUnit != null)
+        if (CurrentUnit != null && CurrentUnitModel != null)
+        {
+            if (GameLogicManager.Instance.BuyUnit(CurrentUnitModel))
+            {
+                Destroy(CurrentUnit.gameObject);
+                CurrentUnit = null;
+                CurrentUnitModel = null;
+                AudioManager.Instance.PlayBuyUnitSoundEffect();
+            }
+        }
+    }
+
+    public void SetUnit(UnitModel unitModel)
+    {
+        if (CurrentUnit != null && CurrentUnitModel != null)
         {
             Destroy(CurrentUnit.gameObject);
+            CurrentUnit = null;
+            CurrentUnitModel = null;
         }
-        CurrentUnit = Instantiate(unit.UnitPrefab, transform, false);
-        CurrentUnit.Initialize(unit.Class.ToString(), unit.Origin.ToString(), unit.Name, unit.Cost.ToString());
+        CurrentUnitModel = unitModel;
+        CurrentUnit = Instantiate(unitModel.ShopUnitPrefab, transform, false);
+        CurrentUnit.Initialize(unitModel);
     }
 }

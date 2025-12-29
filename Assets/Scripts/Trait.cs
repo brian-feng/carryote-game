@@ -8,6 +8,7 @@ public class Trait
         Ventyx,
         Yote,
         Friend,
+        Family,
         Noxus,
         Allfather
     }
@@ -22,6 +23,7 @@ public class Trait
         Drunk,
         Gunslinger,
         Scholar,
-        Vanquisher
+        Vanquisher,
+        Woman
     }
 }

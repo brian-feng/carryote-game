@@ -15,60 +15,280 @@ MonoBehaviour:
   OneCosts:
   - Cost: 1
     Name: Captain Matthew
-    Origin: 4
-    Class: 4
-    UnitPrefab: {fileID: 1206015929760870538, guid: 16decd4f4b10b454a8765f74352f68e4, type: 3}
+    Origin: 2
+    Class: 5
+    AttackDamage: 50
+    AttackSpeed: 0.6
+    Health: 500
+    Armor: 20
+    AbilityDamage: 200
+    ShopUnitPrefab: {fileID: 1206015929760870538, guid: 16decd4f4b10b454a8765f74352f68e4, type: 3}
+    FieldUnitPrefab: {fileID: 553382463401647347, guid: 4b202f63f78303b499446f7431d5f028, type: 3}
   - Cost: 1
     Name: Misogynyx
-    Origin: 5
+    Origin: 3
+    Class: 9
+    AttackDamage: 50
+    AttackSpeed: 0.6
+    Health: 600
+    Armor: 40
+    AbilityDamage: 100
+    ShopUnitPrefab: {fileID: 6307142981996355950, guid: 02f0dbd8b811a4345bed2e0777b19874, type: 3}
+    FieldUnitPrefab: {fileID: 4405386169032805793, guid: 7e941e811821f2e49bc84cd27bd74a48, type: 3}
+  - Cost: 1
+    Name: Studyote
+    Origin: 4
     Class: 8
-    UnitPrefab: {fileID: 1206015929760870538, guid: 16decd4f4b10b454a8765f74352f68e4, type: 3}
+    AttackDamage: 20
+    AttackSpeed: 0.6
+    Health: 500
+    Armor: 20
+    AbilityDamage: 250
+    ShopUnitPrefab: {fileID: 1790603515301594851, guid: 80371c6d76d668845ade56781983b0b8, type: 3}
+    FieldUnitPrefab: {fileID: 4333461006111131563, guid: cc66e57adcbe112488d06228ce015c5a, type: 3}
+  - Cost: 1
+    Name: Mom
+    Origin: 6
+    Class: 10
+    AttackDamage: 20
+    AttackSpeed: 0.6
+    Health: 500
+    Armor: 20
+    AbilityDamage: 250
+    ShopUnitPrefab: {fileID: 2885005303791704208, guid: 193fffc86b2958e448328e6fe5f92300, type: 3}
+    FieldUnitPrefab: {fileID: 5679713031778156185, guid: e94133cbda089b147a8c0e6fcf28b6db, type: 3}
   TwoCosts:
   - Cost: 2
     Name: Sion
-    Origin: 6
-    Class: 3
-    UnitPrefab: {fileID: 8748273653815219169, guid: 592304e1b1851f145b9586050fb34ea4, type: 3}
+    Origin: 7
+    Class: 2
+    AttackDamage: 50
+    AttackSpeed: 0.5
+    Health: 800
+    Armor: 50
+    AbilityDamage: 100
+    ShopUnitPrefab: {fileID: 8748273653815219169, guid: 592304e1b1851f145b9586050fb34ea4, type: 3}
+    FieldUnitPrefab: {fileID: 8257417876686565991, guid: 9b07b67e353cd9d4a82371565db294c7, type: 3}
   - Cost: 2
     Name: Carreon 21st
-    Origin: 3
+    Origin: 1
     Class: 6
-    UnitPrefab: {fileID: 7041360521293082496, guid: 29caace30991ea949a156235c08f6f3e, type: 3}
+    AttackDamage: 60
+    AttackSpeed: 0.6
+    Health: 600
+    Armor: 30
+    AbilityDamage: 300
+    ShopUnitPrefab: {fileID: 7041360521293082496, guid: 29caace30991ea949a156235c08f6f3e, type: 3}
+    FieldUnitPrefab: {fileID: 674899146770285448, guid: 1cc74b091d0a2334fb9b4c35c355a476, type: 3}
   - Cost: 2
     Name: Frog Rider
-    Origin: 3
-    Class: 7
-    UnitPrefab: {fileID: 7041360521293082496, guid: c6668fff25959324c880a8ee5e0de60a, type: 3}
+    Origin: 4
+    Class: 3
+    AttackDamage: 50
+    AttackSpeed: 0.5
+    Health: 800
+    Armor: 50
+    AbilityDamage: 100
+    ShopUnitPrefab: {fileID: 7041360521293082496, guid: c6668fff25959324c880a8ee5e0de60a, type: 3}
+    FieldUnitPrefab: {fileID: 2054279731405016870, guid: c61a6edc047341444bb84d3410e4ae3c, type: 3}
+  - Cost: 2
+    Name: Andrew
+    Origin: 5
+    Class: 4
+    AttackDamage: 50
+    AttackSpeed: 0.5
+    Health: 800
+    Armor: 50
+    AbilityDamage: 100
+    ShopUnitPrefab: {fileID: 5262221161549866187, guid: 36ee441ace0d3e54384a93d394262e1b, type: 3}
+    FieldUnitPrefab: {fileID: 740926283342461309, guid: 787cd5e29db3b0b4da7d9685827ef974, type: 3}
+  - Cost: 2
+    Name: Dad
+    Origin: 6
+    Class: 9
+    AttackDamage: 60
+    AttackSpeed: 0.6
+    Health: 600
+    Armor: 40
+    AbilityDamage: 200
+    ShopUnitPrefab: {fileID: 4080677079544703073, guid: f9f872d0ec2f309479b2b746c898a713, type: 3}
+    FieldUnitPrefab: {fileID: 8306078924694612240, guid: 3b1d9334af38fac4fb2602e88eb46760, type: 3}
   ThreeCosts:
   - Cost: 3
     Name: Darius
-    Origin: 6
+    Origin: 7
     Class: 4
-    UnitPrefab: {fileID: 3383180225327146646, guid: 23785bfe2642b8746a7c21087fb12a3f, type: 3}
+    AttackDamage: 70
+    AttackSpeed: 0.5
+    Health: 1000
+    Armor: 60
+    AbilityDamage: 300
+    ShopUnitPrefab: {fileID: 3383180225327146646, guid: 23785bfe2642b8746a7c21087fb12a3f, type: 3}
+    FieldUnitPrefab: {fileID: 309387671338044931, guid: ff594fef9968ec14586b0d9c19b936b8, type: 3}
   - Cost: 3
     Name: Carreon 22nd
-    Origin: 3
+    Origin: 1
     Class: 6
-    UnitPrefab: {fileID: 3383180225327146646, guid: 00877546d6a18a44e8d6e08882e5a6b7, type: 3}
+    AttackDamage: 70
+    AttackSpeed: 0.7
+    Health: 700
+    Armor: 40
+    AbilityDamage: 600
+    ShopUnitPrefab: {fileID: 3383180225327146646, guid: 00877546d6a18a44e8d6e08882e5a6b7, type: 3}
+    FieldUnitPrefab: {fileID: 1617524657248265274, guid: f5bbae1335af6d74784a50cac89cc66f, type: 3}
+  - Cost: 3
+    Name: Glider
+    Origin: 2
+    Class: 1
+    AttackDamage: 90
+    AttackSpeed: 0.7
+    Health: 700
+    Armor: 40
+    AbilityDamage: 300
+    ShopUnitPrefab: {fileID: 7249090433205264895, guid: fd8ac10ec4a08ba4d9ebf10e95239ae1, type: 3}
+    FieldUnitPrefab: {fileID: 5789844118338005104, guid: 1d5e2ae964b487747a77d1dc9f63bb7b, type: 3}
+  - Cost: 3
+    Name: Ryan
+    Origin: 5
+    Class: 8
+    AttackDamage: 40
+    AttackSpeed: 0.7
+    Health: 700
+    Armor: 40
+    AbilityDamage: 800
+    ShopUnitPrefab: {fileID: 4576967183119019606, guid: 5ca2b465df30cc940a7de39d26eca348, type: 3}
+    FieldUnitPrefab: {fileID: 9206862836714116400, guid: 1675dfeb4116e3348ad58035967544d0, type: 3}
+  - Cost: 3
+    Name: Hannah
+    Origin: 6
+    Class: 10
+    AttackDamage: 40
+    AttackSpeed: 0.7
+    Health: 700
+    Armor: 40
+    AbilityDamage: 800
+    ShopUnitPrefab: {fileID: 8035006896898269282, guid: d14da28a49c074645bd8dff9a9043f94, type: 3}
+    FieldUnitPrefab: {fileID: 8015222596303436904, guid: 0fe974f2980ea2745beb02d658d81c76, type: 3}
   FourCosts:
   - Cost: 4
     Name: Andy Rider
-    Origin: 2
-    Class: 7
-    UnitPrefab: {fileID: 8131421168558628095, guid: 916055f6fc110854288364aa500248bd, type: 3}
+    Origin: 4
+    Class: 3
+    AttackDamage: 70
+    AttackSpeed: 0.5
+    Health: 1200
+    Armor: 70
+    AbilityDamage: 400
+    ShopUnitPrefab: {fileID: 8131421168558628095, guid: 916055f6fc110854288364aa500248bd, type: 3}
+    FieldUnitPrefab: {fileID: 3762023299544374290, guid: b223c0e558ed1244a87e904ad78389b0, type: 3}
   - Cost: 4
     Name: Promatthew
-    Origin: 4
-    Class: 4
-    UnitPrefab: {fileID: 8131421168558628095, guid: 409a9490b7052414eb9dcb912125abbd, type: 3}
+    Origin: 2
+    Class: 2
+    AttackDamage: 70
+    AttackSpeed: 0.5
+    Health: 1200
+    Armor: 70
+    AbilityDamage: 400
+    ShopUnitPrefab: {fileID: 8131421168558628095, guid: 409a9490b7052414eb9dcb912125abbd, type: 3}
+    FieldUnitPrefab: {fileID: 8176541085083710325, guid: 6ddae20d2356d5147b5b9c15ca2e0653, type: 3}
   - Cost: 4
     Name: Ambessa
     Origin: 6
-    Class: 8
-    UnitPrefab: {fileID: 8131421168558628095, guid: cfd895a865013cf4f976a70b33147f98, type: 3}
+    Class: 9
+    AttackDamage: 80
+    AttackSpeed: 0.8
+    Health: 1000
+    Armor: 60
+    AbilityDamage: 300
+    ShopUnitPrefab: {fileID: 8131421168558628095, guid: cfd895a865013cf4f976a70b33147f98, type: 3}
+    FieldUnitPrefab: {fileID: 6893750293015778596, guid: a1e7e92ecc66e6b4eb1045de7a76a2d5, type: 3}
+  - Cost: 4
+    Name: Roger
+    Origin: 5
+    Class: 1
+    AttackDamage: 100
+    AttackSpeed: 0.9
+    Health: 500
+    Armor: 50
+    AbilityDamage: 300
+    ShopUnitPrefab: {fileID: 1909794658323182180, guid: d9ab661796ebfc341b6b7ef2a0fb7f1c, type: 3}
+    FieldUnitPrefab: {fileID: 1179245829748849945, guid: 7389484dd3356bd4b9d544174d0cdecb, type: 3}
+  - Cost: 4
+    Name: Steph
+    Origin: 5
+    Class: 10
+    AttackDamage: 60
+    AttackSpeed: 0.8
+    Health: 500
+    Armor: 50
+    AbilityDamage: 1200
+    ShopUnitPrefab: {fileID: 7805125917434044905, guid: bce1ef1b7314bcd45aa5fa0159e94351, type: 3}
+    FieldUnitPrefab: {fileID: 3902244905587388617, guid: c5aeb4a8734db924cb92be36b5954564, type: 3}
+  - Cost: 4
+    Name: Sad Trumpet
+    Origin: 3
+    Class: 5
+    AttackDamage: 70
+    AttackSpeed: 0.8
+    Health: 500
+    Armor: 50
+    AbilityDamage: 1000
+    ShopUnitPrefab: {fileID: 4419688439827848352, guid: dc2ec960d609eeb488d03d1f3877605f, type: 3}
+    FieldUnitPrefab: {fileID: 6550823900699675198, guid: a0f1af67b362e88438cd5fd2253508c9, type: 3}
   FiveCosts:
   - Cost: 5
     Name: Guntyx
+    Origin: 3
+    Class: 7
+    AttackDamage: 100
+    AttackSpeed: 1
+    Health: 1000
+    Armor: 60
+    AbilityDamage: 1000
+    ShopUnitPrefab: {fileID: 6534617420973491360, guid: 17cf31d2047e9454ebc22e4c32a675b3, type: 3}
+    FieldUnitPrefab: {fileID: 6420460074530345189, guid: 44159868e5d441e4b8fabfd4af2a9bdc, type: 3}
+  - Cost: 5
+    Name: Thanos Carreon
+    Origin: 1
+    Class: 4
+    AttackDamage: 100
+    AttackSpeed: 0.5
+    Health: 1500
+    Armor: 80
+    AbilityDamage: 1000
+    ShopUnitPrefab: {fileID: 8748273653815219169, guid: 442c2d0c8db6fcf4abd096c33204f698, type: 3}
+    FieldUnitPrefab: {fileID: 3487187611951278083, guid: 4f91516b3c5e1e14d9c2da361ff4f58c, type: 3}
+  - Cost: 69
+    Name: The Allfather
+    Origin: 8
+    Class: 0
+    AttackDamage: 420
+    AttackSpeed: 0.69
+    Health: 69420
+    Armor: 420
+    AbilityDamage: 69420
+    ShopUnitPrefab: {fileID: 3516072582580779713, guid: 23856252ce79965488bfe9bb380fa651, type: 3}
+    FieldUnitPrefab: {fileID: 3689531462502132137, guid: 8b153e49b28161343b33bb13558f63b6, type: 3}
+  - Cost: 5
+    Name: Brian
     Origin: 5
-    Class: 1
-    UnitPrefab: {fileID: 6534617420973491360, guid: 17cf31d2047e9454ebc22e4c32a675b3, type: 3}
+    Class: 2
+    AttackDamage: 100
+    AttackSpeed: 0.8
+    Health: 1500
+    Armor: 100
+    AbilityDamage: 1500
+    ShopUnitPrefab: {fileID: 4306702919050083772, guid: 88d92cd86b805454a9ede9adcde3fa88, type: 3}
+    FieldUnitPrefab: {fileID: 5407612910962465241, guid: 4e46b379efbf9dc4ebcf0eba212ec2b0, type: 3}
+  - Cost: 5
+    Name: Femboyote
+    Origin: 4
+    Class: 10
+    AttackDamage: 60
+    AttackSpeed: 1
+    Health: 1000
+    Armor: 60
+    AbilityDamage: 2000
+    ShopUnitPrefab: {fileID: 5888491098862012268, guid: 890d6e18c312e174f84e6d4fcf2d1087, type: 3}
+    FieldUnitPrefab: {fileID: 2589365866881328589, guid: 15aaeaf9d24872a498af974e802c2e81, type: 3}

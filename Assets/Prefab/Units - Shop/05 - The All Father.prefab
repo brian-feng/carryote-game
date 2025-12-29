@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8290652759539964487, guid: bb51a45c53239944b969413f6e7bd2c2, type: 3}
       propertyPath: m_text
-      value: None
+      value: Allfather
       objectReference: {fileID: 0}
     - target: {fileID: 8290652759539964487, guid: bb51a45c53239944b969413f6e7bd2c2, type: 3}
       propertyPath: m_fontSize

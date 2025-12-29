@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,11 +11,15 @@ public class Shop : MonoBehaviour
     [SerializeField] private Button RerollButton;
     [SerializeField] private Button BuyXPButton;
     [SerializeField] private UnitsScriptableObject UnitsPool;
+    [SerializeField] private GameObject FightImage;
+    [SerializeField] private Button FightButton;
 
     void Start()
     {
         InitializeShop();
         RerollButton.onClick.AddListener(Reroll);
+        BuyXPButton.onClick.AddListener(BuyXP);
+        FightButton.onClick.AddListener(BeginFight);
     }
 
     private void InitializeShop()
@@ -24,8 +29,11 @@ public class Shop : MonoBehaviour
 
     private void Reroll()
     {
-        RefreshShop();
-        AudioManager.Instance.PlayRollSoundEffect();
+        if (GameLogicManager.Instance.BuyReroll())
+        {
+            RefreshShop();
+            AudioManager.Instance.PlayRollSoundEffect();   
+        }
     }
     private void RefreshShop()
     {
@@ -80,5 +88,37 @@ public class Shop : MonoBehaviour
         
         // Choose a random unit within that pool
         return PotentialUnits[Random.Range(0, PotentialUnits.Count)];
+    }
+
+    private void BuyXP()
+    {
+        if (GameLogicManager.Instance.BuyXP())
+        {
+            AudioManager.Instance.PlayBuyXPSoundEffect();
+        }
+    }
+
+    public void BeginFight()
+    {
+        FightImage.SetActive(false);
+        FightButton.interactable = false;
+        StartCoroutine(Fight());
+    }
+
+    public IEnumerator Fight()
+    {
+        yield return new WaitForSeconds(1f);
+        if (GameLogicManager.Instance.AttemptFight())
+        {
+            NextRound();
+        }
+    }
+    
+    public void NextRound()
+    {
+        FightImage.SetActive(true);
+        FightButton.interactable = true;
+        GameLogicManager.Instance.NextRound();
+        RefreshShop();
     }
 }
