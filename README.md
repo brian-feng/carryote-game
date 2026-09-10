@@ -5,4 +5,4 @@ A downloadable version has been made available with Matthew's permission, but fo
 
 For convenience, you start the game with 999 gold.
 
-Download here: https://drive.google.com/file/d/1e20ieHsjoXueT9ISsg9wbuSmte0QJsEX/view?usp=sharing
+Direct download here: https://drive.google.com/file/d/1e20ieHsjoXueT9ISsg9wbuSmte0QJsEX/view?usp=sharing
