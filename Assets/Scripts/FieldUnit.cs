@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -7,8 +8,9 @@ public class FieldUnit : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 {
     [SerializeField] private Image BackgroundImage;
     [SerializeField] private List<Image> StarImages;
+    [SerializeField] private TextMeshProUGUI text;
+    private FieldSlot OldSlot;
     public UnitModel UnitModel { get; private set; }
-    public FieldSlot OldSlot { get; private set; }
     public FieldSlot CurrentSlot;
     private bool IsHovering;
 
@@ -35,6 +37,7 @@ public class FieldUnit : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     {
         UnitModel = unit;
         CurrentSlot = slot;
+        text.text = unit.Name;
     }
     
     public void OnBeginDrag(PointerEventData eventData)
@@ -42,7 +45,11 @@ public class FieldUnit : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         OldSlot = CurrentSlot;
         transform.localScale *= 5f/4f;
         ParentAfterDrag = transform.parent;
-        CurrentSlot.ClearUnit();
+        if (CurrentSlot != null)
+        {
+            CurrentSlot.ClearUnit();
+            CurrentSlot = null;
+        }
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
         BackgroundImage.raycastTarget = false;
@@ -50,12 +57,27 @@ public class FieldUnit : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
+        transform.position = eventData.position;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        transform.localScale *= 4f/5f;
+        Debug.Log("hi");
+        transform.localScale *= 4f / 5f;
+
+        GameObject target = eventData.pointerCurrentRaycast.gameObject;
+        Debug.Log(target.name);
+        if (target != null)
+        {
+            FieldSlot slot = target.GetComponentInParent<FieldSlot>();
+
+            if (slot != null && GameLogicManager.Instance.Field.BoardedUnits().Count < GameLogicManager.Instance.PlayerLevel)
+            {
+                slot.SetUnit(this);
+                ParentAfterDrag = slot.transform;
+            }
+        }
+
         transform.SetParent(ParentAfterDrag);
         BackgroundImage.raycastTarget = true;
     }

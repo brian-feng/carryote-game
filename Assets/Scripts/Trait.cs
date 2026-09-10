@@ -24,6 +24,6 @@ public class Trait
         Gunslinger,
         Scholar,
         Vanquisher,
-        Woman
+        Arcanist
     }
 }

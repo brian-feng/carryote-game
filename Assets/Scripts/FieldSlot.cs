@@ -14,12 +14,7 @@ public class FieldSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoi
 
     public void OnDrop(PointerEventData eventData)
     {
-        GameObject dropped = eventData.pointerDrag;
-        FieldUnit unit = dropped.GetComponent<FieldUnit>();
-        unit.ParentAfterDrag = transform;
-        BackgroundImage.color = new Color(BackgroundImage.color.r, BackgroundImage.color.g, BackgroundImage.color.b,
-            maxAlpha);
-        SetUnit(unit);
+        
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -48,7 +43,11 @@ public class FieldSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoi
 
     public void ClearUnit()
     {
-        CurrentUnit.CurrentSlot = null;
+        if (CurrentUnit != null)
+        {
+            CurrentUnit.CurrentSlot = null;
+        }
+
         CurrentUnit = null;
         CurrentUnitModel = null;
     }

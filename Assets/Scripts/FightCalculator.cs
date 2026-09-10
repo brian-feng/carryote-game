@@ -116,9 +116,9 @@ public class FightCalculator
             {
                 speed *= (speed * (1 + Classes[Trait.Class.Scholar] * 0.2));
             }
-            if (Classes[Trait.Class.Woman] >= 2 && model.Class == Trait.Class.Woman)
+            if (Classes[Trait.Class.Arcanist] >= 2 && model.Class == Trait.Class.Arcanist)
             {
-                damage += Classes[Trait.Class.Woman] * 200;
+                damage += Classes[Trait.Class.Arcanist] * 200;
             }
             int total = (int)(damage * speed);
             magical += total;

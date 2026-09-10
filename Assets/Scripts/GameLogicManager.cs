@@ -139,7 +139,7 @@ public class GameLogicManager : MonoBehaviour
         if (Difficulty < calc.CalculateCombatPower())
         {
             Gold += calc.CalculateEconomicReturn();
-            Difficulty = (int)(Difficulty * 2);
+            Difficulty = (int)(Difficulty * 1.2);
             return true;
         }
 

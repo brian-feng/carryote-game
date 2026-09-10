@@ -25,17 +25,6 @@ MonoBehaviour:
     ShopUnitPrefab: {fileID: 1206015929760870538, guid: 16decd4f4b10b454a8765f74352f68e4, type: 3}
     FieldUnitPrefab: {fileID: 553382463401647347, guid: 4b202f63f78303b499446f7431d5f028, type: 3}
   - Cost: 1
-    Name: Misogynyx
-    Origin: 3
-    Class: 9
-    AttackDamage: 50
-    AttackSpeed: 0.6
-    Health: 600
-    Armor: 40
-    AbilityDamage: 100
-    ShopUnitPrefab: {fileID: 6307142981996355950, guid: 02f0dbd8b811a4345bed2e0777b19874, type: 3}
-    FieldUnitPrefab: {fileID: 4405386169032805793, guid: 7e941e811821f2e49bc84cd27bd74a48, type: 3}
-  - Cost: 1
     Name: Studyote
     Origin: 4
     Class: 8
@@ -194,7 +183,7 @@ MonoBehaviour:
     FieldUnitPrefab: {fileID: 8176541085083710325, guid: 6ddae20d2356d5147b5b9c15ca2e0653, type: 3}
   - Cost: 4
     Name: Ambessa
-    Origin: 6
+    Origin: 7
     Class: 9
     AttackDamage: 80
     AttackSpeed: 0.8
@@ -281,14 +270,3 @@ MonoBehaviour:
     AbilityDamage: 1500
     ShopUnitPrefab: {fileID: 4306702919050083772, guid: 88d92cd86b805454a9ede9adcde3fa88, type: 3}
     FieldUnitPrefab: {fileID: 5407612910962465241, guid: 4e46b379efbf9dc4ebcf0eba212ec2b0, type: 3}
-  - Cost: 5
-    Name: Femboyote
-    Origin: 4
-    Class: 10
-    AttackDamage: 60
-    AttackSpeed: 1
-    Health: 1000
-    Armor: 60
-    AbilityDamage: 2000
-    ShopUnitPrefab: {fileID: 5888491098862012268, guid: 890d6e18c312e174f84e6d4fcf2d1087, type: 3}
-    FieldUnitPrefab: {fileID: 2589365866881328589, guid: 15aaeaf9d24872a498af974e802c2e81, type: 3}
